@@ -1,4 +1,7 @@
-@Andy
+__Problem__
+Design a method to find the frequency of occurences of any given word in a book. What if we were running this algorithm multiple times?
+
+Python solution by @Andy
 
 ```python
 import collections
@@ -38,7 +41,7 @@ if __name__ == "__main__":
         print(f"{word}: {count}")
 ```
 
-@kishan
+Python solution by @kishan
 
 ```python
 from collections import defaultdict
@@ -66,7 +69,7 @@ JavaScript one-liner by @madhavarshney
 const getWordCount = (str, word) => str.split(" ").reduce((acc, word) => word.trim().toLowerCase() === word ? acc + 1 : acc, 0);
 ```
 
-@TryExceptElse
+Python solution by @TryExceptElse
 
 ```python
 from pathlib import Path
@@ -96,7 +99,10 @@ def count_word(book_path: Path, word: str) -> int:
     return count
 ```
 
-@Yao
+__Yao-Tier Problem__
+You have a large text file containing words. Given any two words, find the shortest distance (in terms of number of words) between them in the file.  If the operation will be repeated many times for the same file (but different pairs of words), can you optimize your solution?
+
+Python solution by @Yao
 
 ```python
 with open("bee-movie-sanitized", 'r') as book_in_file:
@@ -143,7 +149,7 @@ if __name__ == "__main__":
     print(get_word_distance("to", "is"))
 ```
 
-@kishan
+Python solution by @kishan
 
 ```python
 import re
