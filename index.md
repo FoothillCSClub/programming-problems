@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Programming Problems
 
 This page contains the problems and submissions for the programming challenges of Foothill College's CS Club.
