@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Problem 4
 
 On a N x N grid of cells, each cell (x, y) with 0 <= x < N and 0 <= y < N has a lamp.
@@ -46,4 +50,4 @@ Note:
 lamps[i].length == queries[i].length == 2
 ```
 
-https://leetcode.com/problems/grid-illumination/
+[https://leetcode.com/problems/grid-illumination/](https://leetcode.com/problems/grid-illumination/)
