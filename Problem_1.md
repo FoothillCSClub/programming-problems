@@ -9,13 +9,13 @@ import collections
 import string
 
 def addWordCount(fileName: str, target: str, countDict: collections.defaultdict) -> None:
-    
+
     # only parse if word has not been looked up previously
     if not countDict.get(target):
         with open(fileName, 'r') as inFile:  # multiple calls to the file could be expensive. may need to change
             for line in inFile:
                 line = line.strip()
-                if line:  # filters out blank lines in the script lol 
+                if line:  # filters out blank lines in the script lol
                     for word in line.split():
                         word = word.rstrip(string.punctuation).lower()  # removes trailing punctuation & makes word non-case sensitive
                         if word == target:
@@ -25,7 +25,7 @@ def addWordCount(fileName: str, target: str, countDict: collections.defaultdict)
 if __name__ == "__main__":
     fileName = "BeeMovieScript.txt"
     wordCounts = collections.defaultdict(int)
-    
+
     tests = [
         "i",
         "bee",
@@ -52,7 +52,7 @@ def find_occurences_of_word(your_word):
 
     with open('file.txt', 'r') as f:
         for line in f:
-            for word in line.split():                
+            for word in line.split():
                 counter[word] += f
 
     return counter[your_word]
@@ -140,7 +140,7 @@ def get_word_distance(word0, word1):
             cur_start_i = cur_i
 
     # if cur_min_distance == len(WORDS):
-    #     do error stuff        
+    #     do error stuff
 
     return cur_min_distance
 
@@ -169,7 +169,7 @@ def map_file(filename):
     with open(filename, 'r') as f:
         index = 0
         for line in f:
-            for word in line.split():                
+            for word in line.split():
                 stripped_word = strip_word(word).lower()
                 if stripped_word:
                     word_map[stripped_word].append(index)
@@ -198,7 +198,7 @@ def compare_words(word_a, word_b, word_map):
             distance = magnitude(a_words[word_a_index], b_words[word_b_index])
             if distance < min_distance:
                 min_distance = distance
-            
+
             new_distance_a = magnitude(a_words[word_a_index+1], b_words[word_b_index])
             new_distance_b = magnitude(a_words[word_a_index], b_words[word_b_index+1])
 
