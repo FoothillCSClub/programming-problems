@@ -10,6 +10,8 @@ This page contains the problems and submissions for the programming challenges o
 - [Problem 2](Problem_2)
 - [Problem 3](Problem_3)
 - [Problem 4](Problem_4)
+- [Problem 5](Problem_5)
+- [Problem 6](Problem_6)
 
 Go to [https://foothillcs.club](https://foothillcs.club) to join the club!
 
